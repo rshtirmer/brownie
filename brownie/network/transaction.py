@@ -164,7 +164,7 @@ class TransactionReceipt:
         if self._revert_msg is None and revert_type not in ("revert", "invalid_opcode"):
             self._revert_msg = revert_type
 
-        self._await_transaction(required_confs)
+        #self._await_transaction(required_confs)
 
         # if coverage evaluation is active, evaluate the trace
         if (
